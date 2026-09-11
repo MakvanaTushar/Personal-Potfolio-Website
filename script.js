@@ -57,7 +57,7 @@ function closemenu() {
 
 
   // Auto-changing Typewriter Text Effect
-const roles = ["Web Developer", "App Developer", "UI/UX Designer"];
+const roles = ["Web Developer", "Video Editor", "UI/UX Designer"];
 let roleIndex = 0;
 let charIndex = 0;
 let isDeleting = false;

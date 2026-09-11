@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tushar Makvana | Personal Portfolio</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- FontAwesome Icons -->
+    <script src="https://kit.fontawesome.com/fde5abf545.js" crossorigin="anonymous"></script>
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <!-- Header Section -->
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="Images/Tushar (3).png" alt="Logo" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+  <p><span id="changing-text"></span><span class="cursor">|</span></p>
+  <h1>Hi, I'm <span>Tushar</span> <br />Makvana From India</h1>
+</div>
+      </div>
+    </div>
+
+    <!-- About Section -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="Images/user.png" alt="Tushar Makvana" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              I am a B.Sc. Computer Application & IT Undergraduate Student At Ganpat University with a passion for programming and technology. My journey in the tech world started with a strong foundation in languages like HTML, CSS, JavaScript, C, JAVA, PHP. Currently, I am focusing on Python as my primary language, and I am building my expertise in Data Structures & Algorithms (DSA), web development, and Artificial Intelligence (AI). As part of my continuous learning.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab(event, 'skills')">Skills</p>
+              <p class="tab-links" onclick="opentab(event, 'experience')">Experience</p>
+              <p class="tab-links" onclick="opentab(event, 'education')">Education</p>
+            </div>
+            
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>Web Development</span><br />HTML, CSS, JavaScript, React</li>
+                <li><span>Video Editing</span><br />Creating engaging video content</li>
+                <li><span>UI/UX Design</span><br />Designing intuitive Web & Mobile interfaces</li>
+              </ul>
+            </div>
+            
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li><span>2026 - Present</span><br />Frontend Web Development Intern</li>
+              </ul>
+            </div>
+            
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>2024 - 2027</span><br />Bachelor's in Computer Science / IT</li>
+                <li><span>2026</span><br />Web Development Internship AT UPTOSKILLS</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Services Section -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="service-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Development</h2>
+            <p>I create responsive, fast, and user-friendly websites using modern web technologies and best practices.</p>
+            <a href="#contact">Learn More</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-video"></i>
+            <h2>Video Editing</h2>
+            <p>I create engaging video content for various platforms and audiences.</p>
+            <a href="#contact">Learn More</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-crop-simple"></i>
+            <h2>UI/UX Design</h2>
+            <p>I design clean, intuitive, and visually appealing user interfaces that enhance user experience.</p>
+            <a href="#contact">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Portfolio Section -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="Images/work-1.png" alt="Modern Website" />
+            <div class="layer">
+              <h2>Modern Website</h2>
+              <p>Connects you to creative people around the world. Fully responsive and modern design.</p>
+              <a href="#" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="Images/work-2.png" alt="Music App" />
+            <div class="layer">
+              <h2>Cupcut editing</h2>
+              <p>A powerful video editing tool for creating professional-quality videos with ease.</p>
+              <a href="#" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="Images/work-3.png" alt="E-Commerce App" />
+            <div class="layer">
+              <h2>Ui&UX Design</h2>
+              <p>Creating intuitive and visually appealing user interfaces that enhance the overall user experience.</p>
+              <a href="#" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+        </div>
+        <a href="https://github.com/MakvanaTushar" target="_blank" class="btn">See More</a>
+      </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-paper-plane"></i> makwanatushar277@gmail.com</p>
+            <p><i class="fa-solid fa-square-phone"></i> +91 6352809355</p>
+            <div class="social-icons">
+              <a href="https://github.com/MakvanaTushar" target="_blank"><i class="fa-brands fa-github"></i></a>
+              <a href="https://www.linkedin.com/in/makvana-tushar-1439a3394/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BywrQgXTfSHOsZ9ODlZSBRA%3D%3D" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="https://wa.me/916352809355" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+            <a href="Images/my-work.pdf" download class="btn btn2">Download CV</a>
+          </div>
+          <div class="contact-right">
+            <form name="YOUR_FORM_NAME">
+              <input type="text" name="name" placeholder="Your Name" required />
+              <input type="email" name="email" placeholder="Your Email" required />
+              <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Copyright -->
+      <div class="copyright">
+        <p>© Tushar Makvana. Made with <i class="fa-solid fa-heart"></i></p>
+      </div>
+    </div>
+  </body>
+</html>
